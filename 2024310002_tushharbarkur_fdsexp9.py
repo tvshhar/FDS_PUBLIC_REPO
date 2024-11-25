@@ -12,7 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
-data = pd.read_csv('energy_data.csv')
+data = pd.read_csv('energy.csv')
 
 # Check for missing values
 print(data.isnull().sum())
@@ -47,7 +47,7 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 
-!pip install streamlit==1.28.1
+
 
 import streamlit as st
 import numpy as np
